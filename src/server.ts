@@ -16,7 +16,7 @@ io.on("connection", (socket) => {
 
   socket.on("sendMessage", (message) => {
     console.log("📩 New message:", message);
-    io.emit("receiveMessage", message); // Відправляємо всім клієнтам
+    io.emit("receiveMessage", message); 
   });
 
   socket.on("disconnect", () => {
